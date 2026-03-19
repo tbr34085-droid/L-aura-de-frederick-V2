@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura de Frederick</title>
+    <link rel="stylesheet" href="fontawesome/css/all.css"/>
+    <link rel="stylesheet" href="fontawesome/css/svg.css"/>
+    <link rel="stylesheet" href="styleContact.css">
+
+</head>
+<body>
+
+
+
+    <header>
+        <div class="align">
+            <nav>
+                <p class="nav-logo">L'AURA DE FREDERICK</p>
+                <ul>
+                    <li><a href="Accueil.html">Accueil</a></li>
+                    <li><a href="Apropos.html">A propos</a></li>
+                    <li><a href="Produits.html">Parfums</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+                <button class="hamburger" aria-label="Ouvrir le menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </nav>
+       </div>
+    </header>
+
+    <main>
+
+        <section id="Accueilcontact">
+            
+        </section>
+
+        <section id="contactinfo">
+            <div class="align">
+                <div class="conteneur1">
+                    <div class="info">
+                        <div class="infoicon">
+                            <i class="fas fa-location-dot"></i>
+                        </div>
+                        <div class="infotexte">
+                            <h3>Localisation</h3>
+                            <p> LOGPOM, Bassong </p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="infoicon">
+                          <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="infotexte">
+                          <h3> Phone number </h3>
+                          <p> +237 650307945 </p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="infoicon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="infotexte">
+                            <h3> Adresse Email </h3>
+                            <p> tbr34085@gmail.com </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="conteneur2">
+                    <div class="formulaire">
+                       <form id="perfumeForm">
+
+                    <select id="perfume" required>
+                        <option value="" disabled selected>Quel parfum vous a fait l'œil ?</option>
+                        <option>Liquid Brun</option>
+                        <option>Khamrah Lattafa</option>
+                        <option>Now</option>
+                        <option>Invicto Elixir</option>
+                        <option>Ramz Lattafa</option>
+                        <option>Suspenso</option>
+                    </select>
+                    
+                    <input type="text" id="name" placeholder="Votre nom" required>
+                
+                    <input type="tel" id="phone" placeholder="Votre numéro de téléphone" required oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                    
+                    <button type="submit">Envoyer</button>
+                    
+                       </form>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <section id="produitinfo">
+            <div class="align">
+                  <div class="produitinfoTexte">
+                    <h2>Articles recents</h2>
+
+                  </div>
+
+                  <div class="produitinforecent">
+
+            <div class="article">
+                <div class="divimagearticle"><img src="Ramz.webp" alt="RAMZ LATTAFA" class="articleimg"></div>
+                <div class="divtextearticle">
+                    <div class="infoAr">
+                  <div class="infoAr1">
+                    <p class="p9">RAMZ LATTAFA</p>
+                    <p class="p9">Price : <span style="color: #88A9C3;">22 000 XAF</span></p>
+                  </div>
+                  <div class="divinfoAr2icon"><a href="Produits.html#UNISEX" class="icon"><img src="shoppingBAG.png" alt="shoppingbag"></a></div>
+                 </div>
+                </div>
+            </div>       
+
+            <div class="article">
+                  <div class="divimagearticle"><img src="Monte-Leone.png" alt="MONTE-LEONE" class="articleimg"></div>
+            <div class="divtextearticle"> <div class="infoAr">
+                    <div class="infoAr1">
+                      <p class="p9">MONTE-LEONE</p>
+                       <p class="p9">Price : <span style="color: #88A9C3;"> 18 000 XAF</span></p> 
+                    </div>
+                    <div class="divinfoAr2icon"><a href="Produits.html#HOMMES" class="icon"><img src="shoppingBAG.png" alt="shoppingbag"></a></div>
+                  </div> </div>
+            </div>
+
+            <div class="article">
+                <div class="divimagearticle"> <img src="Scandal.png" alt="SCANDAL" class="articleimg"></div>
+            <div class="divtextearticle">     <div class="infoAr">
+                  <div class="infoAr1">
+                    <p class="p9">SCANDAL</p>
+                    <p class="p9">Price : <span style="color: #88A9C3;">22 000 XAF</span></p>
+                  </div>
+                 <div class="divinfoAr2icon"><a href="Produits.html#FEMMES" class="icon"><img src="shoppingBAG.png" alt="shoppingbag"></a></div>
+                </div> </div>
+            </div>
+
+            <div class="article" id="lastarticle">
+                <div class="divimagearticle"><img src="BOHEMIAN-OUD.png" alt="Paco Rabanne Invictus" class="articleimg"></div>
+                <div class="divtextearticle">
+                    <div class="infoAr">
+                  <div class="infoAr1">
+                    <p class="p9">BOHEMIAN OUD</p>
+                    <p class="p9">Price : <span style="color: #88A9C3;">35 000 XAF</span></p>
+                  </div>
+                  <div class="divinfoAr2icon"><a href="Produits.html#FEMMES" class="icon"><img src="shoppingBAG.png" alt="shoppingbag"></a></div>
+                 </div>
+                </div>
+            </div>
+
+                   </div>
+                   
+                    <div class="divswipe">
+                       <p class="swipe"><em>Swipe <i class="fas fa-arrow-right"></i></em></p>
+                    </div>
+
+            <div class="buttproduitinfo"><a href="Produits.html">Voir plus <i class="fas fa-arrow-right"></i> </a></div>
+  
+            </div>
+        </section>
+
+    </main>
+
+    <footer> 
+    <div class="align">
+        <div class="conteneur6">
+
+            <div class="divcontact">
+                <h4>Contact</h4>
+                <p>Localisation <i class="fas fa-location-dot"></i> :  AKWA NORD, DOUALA </p>
+                <p>Phone  <i class="fas fa-phone"></i> :  690470203</p>
+                <p>Email  <i class="fas fa-envelope"></i> :  tbr34085@gmail.com </p>
+            </div>
+
+            <div class="divliens">
+                <h4>Liens utiles</h4>
+                <ul>
+                    <li><a href="Accueil.html" target="_blank">Accueil</a></li>
+                    <li><a href="Apropos.html" target="_blank">A propos</a></li>
+                    <li><a href="produits.html" target="_blank">Parfums</a></li>
+                    <li><a href="Contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="divfaq">
+                <h4>FAQ (Questions frequentes)</h4>
+            <div class="footerquestion">
+                <details>
+                    <summary> D’où viennent vos parfums ? </summary>
+                    <p>Nous nous approvisionnons directement auprès de fournisseurs certifiés, Chaque produit est livré dans son emballage d’origine et scellé afin de garantir son authenticité.</p>
+                </details>
+                <details>
+                    <summary>Quels sont les moyens de paiement acceptés ?</summary>
+                    <p>Nous acceptons le paiement à la livraison, Mobile Money (MTN & Orange).</p>
+                </details>
+                <details>
+                    <summary>Combien de temps prend la livraison ?</summary>
+                    <p>Les commandes sont généralement livrées sous 24 à 72 heures selon votre localisation.</p>
+                </details>
+                <details>
+                    <summary>Puis-je retourner un parfum si je ne suis pas satisfait ?</summary>
+                    <p>Oui, vous pouvez demander un retour si le produit n’a pas été ouvert et reste dans son emballage d’origine. Contactez simplement notre service client pour organiser le retour.</p>
+                </details>
+            </div>
+            </div>
+
+        </div>
+        <div class="conteneur7">
+            <div class="reseausocial"> 
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-tiktok"></i>
+                <i class="fab fa-snapchat"></i>
+            </div>
+            <div class="copyright"> 
+                <h6>Copyright © 2026 Teddy TEGOUNOU All rights reserved.</h6>
+            </div>
+        </div>
+    </div>
+    </footer>
+    
+        <script src="main.js"></script>
+</body>
+</html>
