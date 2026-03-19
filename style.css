@@ -6,11 +6,11 @@
 
 @font-face {
   font-family: play;
-  src: url('fonts/PlayfairDisplay-Regular.ttf');
+  src: url('PlayfairDisplay-Regular.ttf');
 }
 @font-face {
 font-family: roboto;
-src: url('fonts/Roboto-Regular.ttf');
+src: url('Roboto-Regular.ttf');
 }
 
 :root{
@@ -34,8 +34,6 @@ body{
 }
 
 .align{
-    /* padding: 10px; */
-    /* border-bottom: 1px solid #ffffff21;  */
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -168,7 +166,7 @@ main{
     width: 100%;
     height: 100vh;
 
-    background: linear-gradient(#000000ab) , url(image/Accueilfond.jpg); 
+    background: linear-gradient(#000000ab) , url(Accueilfond.jpg); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -252,7 +250,7 @@ font-weight: 200;
    gap: 30px;
 }
 .conteneur2 i{    
-    border: 3px solid #88A9C3;
+    border: 2px solid #88A9C3;
     border-radius: 50%;
     display: block;              
     font-size: 30px;
@@ -263,6 +261,17 @@ font-weight: 200;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: wobble 1.6s infinite;
+}
+
+@keyframes wobble {
+    0% { transform: translateX(0);}
+    15% { transform: translateX(-20px);}
+    30% { transform: translateX(15px);}
+    45% { transform: translateX(-10px);}
+    60% { transform: translateX(5px);}
+    75% { transform: translateX(-5px);}
+    100% { transform: translateX(0);}
 }
 .feat1{
     width: 100%;
@@ -297,8 +306,8 @@ font-weight: 200;
     padding: 10px;
     font-weight: 200;
 }
-.conteneur3{  /*DivCategories*/
-   /* border: 1px solid red;     */
+.conteneur3{  
+   /* border: 1px solid red;  */
    width: 100%;
    height: auto;
    max-width: 450px;
@@ -309,7 +318,7 @@ font-weight: 200;
    gap: 10px;
 }
 .categorie1{
-   /* border: 1px solid blue;     */
+   /* border: 1px solid blue; */
    width: 100%;
    height: auto;
    min-height: 300px;
@@ -317,22 +326,23 @@ font-weight: 200;
 
    position: relative;
 
-    /* background: linear-gradient(#00000081), url(image/unisex.jpeg); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-#Unisex{
-    background-image: linear-gradient(#00000081) ,url(image/unisex.jpeg);
-}
-#Femmes{
-    background-image: linear-gradient(#00000081) ,url(image/Femmes.jpeg);
-    background-position: center top;
-}
+
 #Hommes{
-    background-image: linear-gradient(#00000081) ,url(image/hommes.jpeg);
+    background-image: linear-gradient(#00000081) ,url(hommes.jpeg);
         background-position: center top;
 }
+#Femmes{
+    background-image: linear-gradient(#00000081) ,url(Femmes.jpeg);
+    background-position: center top;
+}
+#Unisex{
+    background-image: linear-gradient(#00000081) ,url(unisex.jpeg);
+}
+
 .divcategorie1{
     position: absolute;
     bottom: 0; 
@@ -830,7 +840,11 @@ nav {
     /*1024px*/
 
 @media (min-width: 1024px) {
-
+    nav{
+            /* border: 1px solid red; */
+    width: 70%;
+        padding: 25px;
+    }
     nav ul {
     /* border: 1px solid red; */
     width: 80%;
@@ -989,16 +1003,20 @@ footer .align {
         /*1440px*/
 
 @media (min-width: 1440px) {
-
+        nav{
+            /* border: 1px solid red; */
+                width: 80%;
+                padding: 25px;
+        }
 body {
     font-size: 18px;
 }
 ul li a {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
     nav ul {
     /* border: 1px solid red; */
-    width: 90%;
+    width: 80%;
 }
 /*ACCUEIL*/
 
@@ -1013,7 +1031,7 @@ ul li a {
         color: #c4c4c4c5;
        }
        a {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
        .conteneur1 a {
     padding: 20px 36px 20px 38px;
@@ -1022,8 +1040,8 @@ ul li a {
 
 /*FEATURE*/
 .conteneur2 i {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
 }
    .conteneur2 {
     /* border: 1px solid brown; */
@@ -1041,14 +1059,14 @@ h2{
 }
 .categorie1 h3
  {
-    font-size: 2.1rem;
+    font-size: 1.8rem;
 }
     .conteneur3 {
         /* border: 1px solid red; */
         max-width: 1250px;
     }
     .categorie1 {
-    min-height: 350px;
+    min-height: 380px;
     padding: 30px;
 }
 
@@ -1061,8 +1079,8 @@ h2{
             justify-content: space-between;
         }
 #lastarticle{
-    display: block;
-    justify-content: space-between;
+   display: block;
+   justify-content: space-between;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
@@ -1078,15 +1096,11 @@ padding: 0;
     Max-width: 290px;
     height: auto;
     min-width: 0;
-
 }    
 .articleimg {
     /* border: 2px solid green; */
     height: auto;
     min-height: 160px;
-}
-#Gap1{
-    justify-content: space-between;
 }
 .divswipe {
 display: none;
@@ -1102,94 +1116,69 @@ display: none;
 width: 45px;
 height: 45px;
 }
-
+/*NOUVEAUTES*/
+.conteneur5 {
+        /* border: 1px solid red; */
+        max-width: 1250px;
+    }
 }
-
+/*FOOTER*/
+footer .align {
+        /* border: 2px dotted red; */
+        max-width: 1250px;
+    }
         /*1680px*/
-
 @media (min-width: 1680px) {
-ul li a {
-    font-size: 1.4rem;
-}
-    nav ul {
-    /* border: 1px solid red; */
-    width: 100%;
-}
-/*ACCUEIL*/
 
-    #Accueil .align {
-        /* border: 1px solid rebeccapurple; */
-        max-width: 1800px;
-            }
-    .titreDescription h1 {
+/*ACCUEIL*/
+h1 {
         font-size: 80px;
              }
-       a {
-    font-size: 1.4rem;
-}
-       .conteneur1 a {
-    padding: 26px 36px 26px 38px;
-
-}
 
 /*FEATURE*/
    .conteneur2 {
     /* border: 1px solid brown; */
-    max-width: 1800px;
-    padding: 150px 100px;
-    font-size: 1.4rem;
+    max-width: 1400px;
+    padding: 80px 80px;
+    font-size: 1.1rem;
 }
 
 /*CATEGORIES*/
-h2{
-    font-size: 32px;
-     margin: 32px 0; 
-}
+
 .conteneur3 {
         /* border: 1px solid red; */
-        max-width: 1800px;
+        max-width: 1400px;
     }
-    .categorie1 {
-    min-height: 500px;
-}
+
 
 /*PARFUM*/
 .conteneur4 {
             /* border: 2px solid burlywood; */
-            max-width: 1800px;
-            min-height: 500px;
+            max-width: 1400px;
+            min-height: 320px;
             justify-content: space-between;
-                margin-bottom: 32px;
+            margin-bottom: 32px;
         }
 .article {
     /* border: 1px #284257 solid; */
-   Max-width: 430px;
+   Max-width: 330px;
    height: 100%;
    max-height: 100%;
    height: auto;
 
 }       
 .p9 {
-    margin-top: 10px;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
-.icon {
-width: 60px;
-height: 60px;
-}
 /*NOUVEAUTES*/
-.Nouveautestexte h3 {
-    font-size: 3rem;
-
-}
 .Nouveautestexte p{
     font-size: 1.3rem;
     width: 70%;
 }
 .conteneur5 {
     /* border: 1px solid red; */
-    max-width: 1800px;
+    max-width: 1400px;
     padding: 60px;
 }
 
@@ -1201,19 +1190,14 @@ width: 60%;
     max-width: 280px;
     padding: 20px 36px;
 }
+
+
 /*FOOTER*/
 footer{
     padding: 42px 0;
 }
 footer .align {
         /* border: 2px dotted red; */
-        max-width: 1800px;
-       font-size: 1.4rem;
+        max-width: 1400px;
     }
-    h4 {
-    font-size: 1.6rem;
-}
-.reseausocial i {
-    font-size: 1.8rem;
-}
 }
