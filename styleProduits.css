@@ -179,7 +179,7 @@ main{
     align-items: center;
 }
  h1 {
-    font-family: var(--font2);
+font-family: play, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: 200;
     color: #c5b766;
