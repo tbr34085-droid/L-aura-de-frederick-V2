@@ -174,7 +174,6 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
     display: flex;
     align-items: center;
 }
@@ -785,7 +784,10 @@ summary::after{
     width: 80%;
 }
         /*ACCUEIL*/
-
+#accueil{
+/* border: 1px solid rebeccapurple;  */
+    background-attachment: fixed;
+}
     #Accueil .align {
         /* border: 1px solid rebeccapurple; */
         max-width: 1200px;

@@ -184,7 +184,6 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
-    background-attachment: fixed;
 
 }
 #Accueilapropos .align{
@@ -833,6 +832,9 @@ footer .align {
         width: 80%;
     }
     /*ACCUEIL*/
+    #Accueilapropos{
+  background-attachment: fixed;
+}
 #Accueilapropos .align {
     /* border: 2px dotted rebeccapurple; */
     max-width: 1200px;
