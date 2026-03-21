@@ -38,7 +38,7 @@ body{
 
 .align{
     /* border-bottom: 1px solid #ffffff21;  */
-    width: 90%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
 
@@ -56,12 +56,15 @@ section{
 #none{
     display: none;
 }
+#block{
+    display: block;
+}
 a{
     text-decoration: none;
     cursor: pointer;
 }
 h2 {
-    border: 2px solid var(--colorAccent);
+    border: 1px solid var(--colorAccent);
     font-family: play;
     background-color: #88a9c34b;
     color: var(--colorAccent);
@@ -78,7 +81,9 @@ header{
     display: flex;
     justify-content: center;
     
-
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 /*Nav bar*/
@@ -526,7 +531,7 @@ summary::after{
 
         .container-commande {
             /* border: 1px solid blue; */
-            max-width: 500px;
+            max-width: 650px;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
@@ -535,7 +540,8 @@ summary::after{
         }
 
         .commandeinfo{
-            /* border: 1px solid blue; */
+            /* border: 1px solid red; */
+            width: 80%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -544,6 +550,7 @@ summary::after{
 
         .divitextecommande{
             /* border: 1px solid blue; */
+                        width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -551,7 +558,7 @@ summary::after{
         }
         .divimagecommande{
              /* border: 1px solid blue; */
-             width: 90%;
+             width: 100%;
              height: auto;
         }
 
@@ -611,7 +618,7 @@ summary::after{
         .section-livraison,
         .section-paiement,
         .recap-total {
-            width: 90%;
+            width: 100%;
             height: auto;
             background: var(--color2);
             padding: 16px;
@@ -693,13 +700,13 @@ summary::after{
                 align-items: center;
                 padding: 0 20px;
             }
-            nav {
-                width: 100%;
-                padding: 18px 20px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
+nav {
+        width: 100%;
+        padding: 18px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
             .nav-logo {
                 display: block; 
                 
@@ -750,10 +757,12 @@ summary::after{
             .nav-logo {
         font-size: 1rem;
     }
-        nav {
-        /* border: 1px solid rgb(0, 0, 0); */
-        max-width: 700px;
-    }
+nav {
+    /* border: 1px solid rgb(0, 0, 0); */
+    max-width: 700px;
+    padding: 20px;
+    width: 70%;
+}
             /*LISTE*/
         #liste .align {
     /* border: 1px solid rebeccapurple; */
@@ -770,15 +779,24 @@ summary::after{
         .divswipe {
         /* border: 1px red solid; */
         width: 95%;
+        max-width: 660px;
     }
     }
+
+    /*770px*/
+ @media (min-width: 770px) {
+nav {
+    /* border: 1px solid rgb(0, 0, 0); */
+    width: 60%;
+}
+}
     /*1024px*/
     @media (min-width: 1024px) {
-        nav {
-                /* border: 1px solid red; */
-    width: 60%;
-    padding: 25px;
-        }
+    nav{
+            /* border: 1px solid red; */
+    width: 55%;
+    padding: 22px 16px;
+    }
             nav ul {
     /* border: 1px solid red; */
     width: 80%;
@@ -789,7 +807,7 @@ summary::after{
     background-attachment: fixed;
 }
     #Accueil .align {
-        /* border: 1px solid rebeccapurple; */
+        border: 1px solid rebeccapurple;
         max-width: 1200px;
             }
     .titreDescription h1 {
@@ -1015,6 +1033,11 @@ height: 45px;
 .produit-card {
         height: 380px;
 }
+footer .align {
+        /* border: 2px dotted red; */
+        max-width: 1250px;
+       font-size: 1.1rem;
+    }
         /*1680px*/
 
 @media (min-width: 1680px) {

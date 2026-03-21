@@ -309,17 +309,18 @@ select{
     gap: 12px;
 }
 .produitinfoTexte h2{
+    border: 1px solid var(--colorAccent);
     width: 75%;
     max-width: 200px;
     text-align: center;
-    border: 2px solid var(--colorAccent);
     font-family: play;
     font-weight: 200;
     background-color: #88a9c34b;
     color: var(--colorAccent);
-    padding: 10px;
+    padding: 5px 8px;
     margin: 0 auto;
 }
+
 .buttproduitinfo{
     width: 100%;
     height: auto;
@@ -634,7 +635,7 @@ summary::after{
             }
             nav {
                 width: 100%;
-                padding: 18px 20px;
+                padding: 18px 0;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -689,9 +690,11 @@ summary::after{
     .nav-logo {
         font-size: 1rem;
     }
-    nav {
+nav {
     /* border: 1px solid rgb(0, 0, 0); */
     max-width: 700px;
+    padding: 20px;
+    width: 70%;
 }
 /*contactinfo*/
 .conteneur2{
@@ -713,13 +716,24 @@ gap: 24px;
         width: 95%;
     }
 }
-
+    /*770px*/
+ @media (min-width: 770px) {
+nav {
+    /* border: 1px solid rgb(0, 0, 0); */
+    width: 60%;
+}
+}
  /*1024px*/
 
  @media (min-width: 1024px) {
     main {
     gap: 0px;
 }
+    nav{
+            /* border: 1px solid red; */
+    width: 55%;
+    padding: 22px 16px;
+    }
     nav ul {
         /* border: 1px solid red; */
         width: 80%;

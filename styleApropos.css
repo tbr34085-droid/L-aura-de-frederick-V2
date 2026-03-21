@@ -56,18 +56,17 @@ a{
     cursor: pointer;
 }
  h2{
-    border: 2px solid var(--colorAccent);
+    border: 1px solid var(--colorAccent);
     width: 75%;
     max-width: 220px;
     font-weight: 200;
     text-align: center;
-    font-family: play;
+    font-family: play, playfair,Helvetica, sans-serif;
     background-color: #88a9c34b;
     color: var(--colorAccent);
-    padding: 10px;
+    padding: 5px 8px;
     margin: 0 auto;
 }
-
 /*HEADER*/
 
 header{
@@ -698,18 +697,18 @@ summary::after{
 /*RESPONSIVE*/
         @media (max-width: 768px) {
 
-            header {
-                justify-content: space-between; 
-                align-items: center;
-                padding: 0 20px;
-            }
-            nav {
-                width: 100%;
-                padding: 18px 20px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
+header {
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+nav {
+        width: 100%;
+        padding: 18px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
             .nav-logo {
                 display: block; 
             }
@@ -762,6 +761,8 @@ summary::after{
 nav {
     /* border: 1px solid rgb(0, 0, 0); */
     max-width: 700px;
+    padding: 20px;
+    width: 70%;
 }
 nav ul {
     /* border: 1px solid red; */
@@ -819,18 +820,32 @@ footer .align {
     /* border: 2px dotted red; */
     max-width: 700px;
 }
-
-        }
+}
+            /*770px*/
+ @media (min-width: 770px) {
+nav {
+    /* border: 1px solid rgb(0, 0, 0); */
+    width: 60%;
+}
+}
 
 /*1024px*/
         @media (min-width: 1024px) {
  body{
     font-size: 17px;
  }
+     nav{
+            /* border: 1px solid red; */
+    width: 55%;
+    padding: 22px 16px;
+    }
     nav ul {
         /* border: 1px solid red; */
         width: 80%;
     }
+     h2{
+    padding: 10px 8px;
+}
     /*ACCUEIL*/
     #Accueilapropos{
   background-attachment: fixed;
