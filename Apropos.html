@@ -260,7 +260,30 @@
         </div>
     </div>
     </footer>
-        
+                    <!-- SCROLL  -->
+     <script>
+
+            document.addEventListener('DOMContentLoaded', function() {
+                const conteneur4 = document.querySelector('.conteneur4');
+                const leftBtn = document.querySelector('.buttonswipe.left');
+                const rightBtn = document.querySelector('.buttonswipe.right');
+
+                leftBtn.addEventListener('click', function() {
+                    conteneur4.scrollBy({
+                        left: -300,
+                        behavior: 'smooth'
+                    });
+                });
+
+                rightBtn.addEventListener('click', function() {
+                    conteneur4.scrollBy({
+                        left: 300,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+     </script>
             <script src="main.js"></script>
 </body>
 </html>
