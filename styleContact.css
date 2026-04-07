@@ -776,6 +776,7 @@ nav {
                 gap: 50px;
     }
     .info {
+        text-align: left;
     flex-direction: row;
     gap: 16px;
 }
